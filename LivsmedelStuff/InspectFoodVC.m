@@ -7,14 +7,24 @@
 //
 
 #import "InspectFoodVC.h"
+#import "FavouritesVC.h"
 
 @interface InspectFoodVC ()
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic) DBProtocol *dbProtocol;
+@property (nonatomic) NSDictionary *food;
+@property (weak, nonatomic) IBOutlet UITextView *textField;
 
 @end
 
 @implementation InspectFoodVC
+
+-(void)searchFoodDetailsCompleted:(NSDictionary *)result {
+    self.food = result;
+    //self.textField.text = self.food[@"nutrientValues"];
+    NSLog(@"%@", self.food[@"nutrientValues"]);
+}
 
 -(NSString*)imagePath {
     
@@ -30,6 +40,10 @@
     picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     picker.allowsEditing = YES;
     [self presentViewController:picker animated:YES completion:nil];
+}
+- (IBAction)addFavourite:(UITapGestureRecognizer *)sender {
+    UITabBarItem *tbi = [[self.tabBarController.tabBar items] objectAtIndex:1];
+    tbi.badgeValue = @"1";
 }
 
 - (void) saveImage:(UIImage*)image {
@@ -49,15 +63,15 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
     UIImage *pickedImage = info[UIImagePickerControllerOriginalImage];
     self.imageView.image = pickedImage;
+    // Save to cache
+    [self saveImage:self.imageView.image];
     
     // save to cameraroll
     // UIImageWriteToSavedPhotosAlbum(self.image, nil, nil, nil);
-    [self saveImage:self.imageView.image];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.nameLabel.text = [NSString stringWithFormat:@"%@", self.foodNumber];
     NSLog(@"%@", self.imagePath);
@@ -70,6 +84,9 @@
         NSLog(@"Failed to load cached image");
     }
     
+    self.dbProtocol = [[DBProtocol alloc] init];
+    self.dbProtocol.delegate = self;
+    [self.dbProtocol searchFoodDetails:self.foodNumber];
     
 }
 
@@ -78,14 +95,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

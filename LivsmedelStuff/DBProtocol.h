@@ -13,7 +13,8 @@
 
 -(void) searchFoodCompleted:(NSArray*)results;
 -(void) searchNutrientsCompleted:(NSArray*)result;
--(void) fetchNutrientCompleted:(NSString*)result forIndexPath:(NSInteger)ndx;
+-(void) searchFoodDetailsCompleted:(NSDictionary*)result;
+// -(void) fetchNutrientCompleted:(NSString*)result forIndexPath:(NSInteger)ndx;
 
 @end
 
@@ -21,8 +22,9 @@
 
 @property (nonatomic, weak) id<DBDelegate> delegate;
 
+-(void) searchFoodDetails:(NSNumber*)foodNumber;
 -(void) searchFood:(NSString*)searchString;
 -(void) searchItems:(NSArray *)items forNutrient:(NSString*)key;
--(void) fetchNutrient:(NSString*)key forItem:(NSString*)number atIndexPath:(NSInteger)ndx;
+// -(void) fetchNutrient:(NSString*)key forItem:(NSString*)number atIndexPath:(NSInteger)ndx;
 
 @end

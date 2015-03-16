@@ -43,6 +43,39 @@
     
 }
 
+-(void)searchFoodDetails:(NSNumber *)foodNumber {
+    
+    NSString* urlString = [[NSString stringWithFormat:@"http://matapi.se/foodstuff/%@", foodNumber]
+                           stringByAddingPercentEscapesUsingEncoding : NSUTF8StringEncoding];
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request
+                                            completionHandler: ^(NSData *data, NSURLResponse *response, NSError *error) {
+                                                
+                                                if (error) {
+                                                    NSLog(@"Error in response: %@", error);
+                                                    return;
+                                                }
+                                                NSError *parsingError;
+                                                NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
+                                                                                                options:kNilOptions
+                                                                                                  error:&parsingError];
+                                                
+                                                if (!parsingError) {
+                                                    
+                                                    dispatch_async(dispatch_get_main_queue(), ^{
+                                                        [self.delegate searchFoodDetailsCompleted:json];
+                                                    });
+                                                    
+                                                } else NSLog(@"Couldn't parse json: %@", parsingError);
+                                            }];
+    [task resume];
+
+}
+
+/*
 -(void)fetchNutrient:(NSString *)key forItem:(NSString*)number atIndexPath:(NSInteger) ndx{
     
     
@@ -76,9 +109,9 @@
     [task resume];
     
 }
+*/
 
 
-// Fungerar men tar lång tid att slutföra
 -(void)searchItems:(NSArray *)items forNutrient:(NSString *)key {
     
     NSMutableArray *energyValues = [[NSMutableArray alloc] initWithCapacity:items.count];
@@ -87,8 +120,6 @@
     [queue setMaxConcurrentOperationCount:1];
     
     NSBlockOperation *finished = [NSBlockOperation blockOperationWithBlock:^{
-        
-        // NSLog(@"finished: %@", energyValues);
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.delegate searchNutrientsCompleted:energyValues];

@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FrameAccessor" "${PODS_ROOT}/Headers/Public/GraphKit" "${PODS_ROOT}/Headers/Public/MKFoundationKit"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FrameAccessor" -isystem "${PODS_ROOT}/Headers/Public/GraphKit" -isystem "${PODS_ROOT}/Headers/Public/MKFoundationKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-LivsmedelStuff-FrameAccessor" -l"Pods-LivsmedelStuff-GraphKit" -l"Pods-LivsmedelStuff-MKFoundationKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024198212F378347732863D2 /* GKBarGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = C863829A7A0E5A2856BF7345 /* GKBarGraph.h */; };
+		02C06F430725A64676B79209 /* FrameAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9663F13338437DC2B948E108 /* FrameAccessor.h */; };
+		06FF47152B283BC7E2F0E2A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F11672A3A59AF6F7D8F36 /* Foundation.framework */; };
+		099A98C2F9EDA020049CF512 /* NSMutableArray+MK_Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = D6FFC4D41D99A6F15123A4ED /* NSMutableArray+MK_Queue.h */; };
+		0E95D850432FA99D5916C987 /* UIColor+GraphKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DACA0CBA690CEA4FF5ADE8E8 /* UIColor+GraphKit.m */; };
+		10A983972D72DD91DD700F37 /* ViewFrameAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 787BE4565490693B0F4B0906 /* ViewFrameAccessor.h */; };
+		15D9F574A98313992493D5C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F11672A3A59AF6F7D8F36 /* Foundation.framework */; };
+		1822D3DFCF3B2907AAC95EB8 /* GraphKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE3B1BCCE92E4027CDF0549 /* GraphKit.h */; };
+		3A2FEC6978682C50C998C2B0 /* NSArray+MK_Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CFE8A64DEDA8D32724DACA4 /* NSArray+MK_Misc.h */; };
+		3D319367BD48FB4CDD8C8EE1 /* NSMutableArray+MK_Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 14612E807BBCDE01773F27D0 /* NSMutableArray+MK_Misc.h */; };
+		537C9D2B9C99AD498C1081FE /* NSArray+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC00798C9174B18A1BF01F4 /* NSArray+MK_Misc.m */; };
+		541D11612EBE82F4377B4D74 /* UIColor+GraphKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A27D5B8EE75567C2F1E8D1 /* UIColor+GraphKit.h */; };
+		5CB5C1F8AA4A6DD1E820B678 /* NSArray+MK_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = D318748E132F146E49292BA8 /* NSArray+MK_Block.m */; };
+		5F2376A2BD345A74E2B541B3 /* GKLineGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = D241D5D7CD241C6E4C3FB1CD /* GKLineGraph.m */; };
+		5F5FF84D18A087AF5FFB9677 /* Pods-LivsmedelStuff-FrameAccessor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA7F8871CBB506C2042CAA /* Pods-LivsmedelStuff-FrameAccessor-dummy.m */; };
+		656AEB72CC5D4E35EBD1BA8E /* GKBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C760EB7B56C1DF20991C5DB /* GKBar.h */; };
+		677C4137412DE9E882F29C96 /* Pods-LivsmedelStuff-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D113EE411815B0943CA8A7E7 /* Pods-LivsmedelStuff-dummy.m */; };
+		74117E427119B05C13B53318 /* GKLineGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9FC584A8762A7E9B0EF1BC /* GKLineGraph.h */; };
+		82E18244D18D191CADFD5951 /* NSMutableArray+MK_Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 562467E8FD856AA7ECCB29CC /* NSMutableArray+MK_Stack.m */; };
+		88A29624342BD67AB0B12145 /* NSMutableArray+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D4C3F506CBFF58CD25A5F /* NSMutableArray+MK_Misc.m */; };
+		9EA8BF3B6A86D8981C430F99 /* ScrollViewFrameAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F77AFC50B941A642B91F62 /* ScrollViewFrameAccessor.h */; };
+		A3AD0588B807436A210C8408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F11672A3A59AF6F7D8F36 /* Foundation.framework */; };
+		A3FEA4302C479CDA98FB6E7E /* NSArray+MK_Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 66AB15995EB390B8C1D7FC04 /* NSArray+MK_Block.h */; };
+		BCE4F3C1F35ACE4161AD7408 /* GKBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E34286504AA56117F48588CC /* GKBar.m */; };
+		C47132C2304FF0429E0A718D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F11672A3A59AF6F7D8F36 /* Foundation.framework */; };
+		D0017F5EA6FC79CA93990981 /* GKBarGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B485B5C361A3DC6C5BE6FA /* GKBarGraph.m */; };
+		D8C9F51C97E69C12CCC6427F /* ScrollViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B81269BE94F6B123CCFB0F6D /* ScrollViewFrameAccessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E3B3D9B8C5DE477079717F22 /* Pods-LivsmedelStuff-MKFoundationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E72D31A7FC5D8425F58389 /* Pods-LivsmedelStuff-MKFoundationKit-dummy.m */; };
+		E606CA41E496EE640062CCEB /* NSMutableArray+MK_Stack.h in Headers */ = {isa = PBXBuildFile; fileRef = D96054FCF72F7EE3D84BC1E0 /* NSMutableArray+MK_Stack.h */; };
+		E6E8DDB85984D933D63CB123 /* NSArray+MK.h in Headers */ = {isa = PBXBuildFile; fileRef = A5DD90326F211042347A6776 /* NSArray+MK.h */; };
+		EA35E342DC4B1B5DB87D733F /* Pods-LivsmedelStuff-GraphKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC42F277E9257860252A426 /* Pods-LivsmedelStuff-GraphKit-dummy.m */; };
+		EDCACEAE31E7325DE19C98DA /* ViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 933073F78D1CC77D3F8869F6 /* ViewFrameAccessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F82C4BCC04BB0E1F078BB9F6 /* NSMutableArray+MK_Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 251D271438B86794807B9D98 /* NSMutableArray+MK_Queue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F0DE09B3076BAEFE2D2ACF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E3450D6D26425E1490EC9DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A08FF4B268A1C803C24FCA9;
+			remoteInfo = "Pods-LivsmedelStuff-GraphKit";
+		};
+		0FA45AA311A6B8EB925BF166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E3450D6D26425E1490EC9DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A45702DBBBAB2ABCABF943E;
+			remoteInfo = "Pods-LivsmedelStuff-FrameAccessor";
+		};
+		6AC52863717EAA519F0B7C8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E3450D6D26425E1490EC9DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A45702DBBBAB2ABCABF943E;
+			remoteInfo = "Pods-LivsmedelStuff-FrameAccessor";
+		};
+		77292E33EDDCE80B0EE65DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E3450D6D26425E1490EC9DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61A26C9FC6876C8475D75E53;
+			remoteInfo = "Pods-LivsmedelStuff-MKFoundationKit";
+		};
+		86A5D766EEE1741E44C539EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E3450D6D26425E1490EC9DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61A26C9FC6876C8475D75E53;
+			remoteInfo = "Pods-LivsmedelStuff-MKFoundationKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14612E807BBCDE01773F27D0 /* NSMutableArray+MK_Misc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+MK_Misc.h"; path = "Source/NSArray/NSMutableArray+MK_Misc.h"; sourceTree = "<group>"; };
+		15A954120EA9077B3668C572 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		18C65F681E9998877B156FEC /* Pods-LivsmedelStuff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivsmedelStuff.debug.xcconfig"; sourceTree = "<group>"; };
+		1C3D47CE1F84721D8878758E /* Pods-LivsmedelStuff-MKFoundationKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivsmedelStuff-MKFoundationKit-Private.xcconfig"; sourceTree = "<group>"; };
+		1D7D4C3F506CBFF58CD25A5F /* NSMutableArray+MK_Misc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+MK_Misc.m"; path = "Source/NSArray/NSMutableArray+MK_Misc.m"; sourceTree = "<group>"; };
+		251D271438B86794807B9D98 /* NSMutableArray+MK_Queue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+MK_Queue.m"; path = "Source/NSArray/NSMutableArray+MK_Queue.m"; sourceTree = "<group>"; };
+		25E6FE0995974909EC7E5785 /* Pods-LivsmedelStuff-MKFoundationKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivsmedelStuff-MKFoundationKit.xcconfig"; sourceTree = "<group>"; };
+		272F95109115159EE1FD7CD3 /* Pods-LivsmedelStuff-FrameAccessor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivsmedelStuff-FrameAccessor.xcconfig"; sourceTree = "<group>"; };
+		29A27D5B8EE75567C2F1E8D1 /* UIColor+GraphKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+GraphKit.h"; path = "Source/UIColor+GraphKit.h"; sourceTree = "<group>"; };
+		2A2A81C33E7AB51CB8E0AC86 /* Pods-LivsmedelStuff-GraphKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivsmedelStuff-GraphKit.xcconfig"; sourceTree = "<group>"; };
+		2C760EB7B56C1DF20991C5DB /* GKBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKBar.h; path = Source/BarGraph/GKBar.h; sourceTree = "<group>"; };
+		31E72D31A7FC5D8425F58389 /* Pods-LivsmedelStuff-MKFoundationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LivsmedelStuff-MKFoundationKit-dummy.m"; sourceTree = "<group>"; };
+		386F55D905F624B5C09351D0 /* Pods-LivsmedelStuff-FrameAccessor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivsmedelStuff-FrameAccessor-Private.xcconfig"; sourceTree = "<group>"; };
+		40F77AFC50B941A642B91F62 /* ScrollViewFrameAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ScrollViewFrameAccessor.h; path = FrameAccessor/ScrollViewFrameAccessor.h; sourceTree = "<group>"; };
+		51534C4E277939BA2B6AE6FA /* Pods-LivsmedelStuff-MKFoundationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LivsmedelStuff-MKFoundationKit-prefix.pch"; sourceTree = "<group>"; };
+		562467E8FD856AA7ECCB29CC /* NSMutableArray+MK_Stack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+MK_Stack.m"; path = "Source/NSArray/NSMutableArray+MK_Stack.m"; sourceTree = "<group>"; };
+		5FBBFAA22551BE058EFBD9F5 /* Pods-LivsmedelStuff-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LivsmedelStuff-acknowledgements.markdown"; sourceTree = "<group>"; };
+		620F5A76CF6FCD74A30D4B94 /* libPods-LivsmedelStuff-GraphKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LivsmedelStuff-GraphKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66AB15995EB390B8C1D7FC04 /* NSArray+MK_Block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MK_Block.h"; path = "Source/NSArray/NSArray+MK_Block.h"; sourceTree = "<group>"; };
+		66B485B5C361A3DC6C5BE6FA /* GKBarGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKBarGraph.m; path = Source/BarGraph/GKBarGraph.m; sourceTree = "<group>"; };
+		6711EA158CC32759B2529140 /* libPods-LivsmedelStuff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LivsmedelStuff.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9FC584A8762A7E9B0EF1BC /* GKLineGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKLineGraph.h; path = Source/LineGraph/GKLineGraph.h; sourceTree = "<group>"; };
+		6CFE8A64DEDA8D32724DACA4 /* NSArray+MK_Misc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MK_Misc.h"; path = "Source/NSArray/NSArray+MK_Misc.h"; sourceTree = "<group>"; };
+		6EFA7F8871CBB506C2042CAA /* Pods-LivsmedelStuff-FrameAccessor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LivsmedelStuff-FrameAccessor-dummy.m"; sourceTree = "<group>"; };
+		7259049C72F8E763A41DC7B4 /* Pods-LivsmedelStuff-FrameAccessor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LivsmedelStuff-FrameAccessor-prefix.pch"; sourceTree = "<group>"; };
+		7449DA0284E87C69D018EAF6 /* Pods-LivsmedelStuff-GraphKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LivsmedelStuff-GraphKit-prefix.pch"; sourceTree = "<group>"; };
+		787BE4565490693B0F4B0906 /* ViewFrameAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ViewFrameAccessor.h; path = FrameAccessor/ViewFrameAccessor.h; sourceTree = "<group>"; };
+		7AC42F277E9257860252A426 /* Pods-LivsmedelStuff-GraphKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LivsmedelStuff-GraphKit-dummy.m"; sourceTree = "<group>"; };
+		861C4E949DFCA42F3169C28C /* libPods-LivsmedelStuff-FrameAccessor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LivsmedelStuff-FrameAccessor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		933073F78D1CC77D3F8869F6 /* ViewFrameAccessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ViewFrameAccessor.m; path = FrameAccessor/ViewFrameAccessor.m; sourceTree = "<group>"; };
+		9663F13338437DC2B948E108 /* FrameAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FrameAccessor.h; path = FrameAccessor/FrameAccessor.h; sourceTree = "<group>"; };
+		9F34C243F3071F61726A61C3 /* Pods-LivsmedelStuff-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LivsmedelStuff-acknowledgements.plist"; sourceTree = "<group>"; };
+		A0433D76D859D991697F7B89 /* libPods-LivsmedelStuff-MKFoundationKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LivsmedelStuff-MKFoundationKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DD90326F211042347A6776 /* NSArray+MK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MK.h"; path = "Source/NSArray/NSArray+MK.h"; sourceTree = "<group>"; };
+		B1E2848501057B94BCD7841D /* Pods-LivsmedelStuff-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LivsmedelStuff-resources.sh"; sourceTree = "<group>"; };
+		B81269BE94F6B123CCFB0F6D /* ScrollViewFrameAccessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ScrollViewFrameAccessor.m; path = FrameAccessor/ScrollViewFrameAccessor.m; sourceTree = "<group>"; };
+		B8DCCFAE8E7DF1831A955C08 /* Pods-LivsmedelStuff-GraphKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivsmedelStuff-GraphKit-Private.xcconfig"; sourceTree = "<group>"; };
+		BA51D032B8B37B66494E6252 /* Pods-LivsmedelStuff-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LivsmedelStuff-environment.h"; sourceTree = "<group>"; };
+		C863829A7A0E5A2856BF7345 /* GKBarGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKBarGraph.h; path = Source/BarGraph/GKBarGraph.h; sourceTree = "<group>"; };
+		D113EE411815B0943CA8A7E7 /* Pods-LivsmedelStuff-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LivsmedelStuff-dummy.m"; sourceTree = "<group>"; };
+		D241D5D7CD241C6E4C3FB1CD /* GKLineGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKLineGraph.m; path = Source/LineGraph/GKLineGraph.m; sourceTree = "<group>"; };
+		D318748E132F146E49292BA8 /* NSArray+MK_Block.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MK_Block.m"; path = "Source/NSArray/NSArray+MK_Block.m"; sourceTree = "<group>"; };
+		D6FFC4D41D99A6F15123A4ED /* NSMutableArray+MK_Queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+MK_Queue.h"; path = "Source/NSArray/NSMutableArray+MK_Queue.h"; sourceTree = "<group>"; };
+		D96054FCF72F7EE3D84BC1E0 /* NSMutableArray+MK_Stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+MK_Stack.h"; path = "Source/NSArray/NSMutableArray+MK_Stack.h"; sourceTree = "<group>"; };
+		DACA0CBA690CEA4FF5ADE8E8 /* UIColor+GraphKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+GraphKit.m"; path = "Source/UIColor+GraphKit.m"; sourceTree = "<group>"; };
+		E34286504AA56117F48588CC /* GKBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKBar.m; path = Source/BarGraph/GKBar.m; sourceTree = "<group>"; };
+		E57F11672A3A59AF6F7D8F36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FCC00798C9174B18A1BF01F4 /* NSArray+MK_Misc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MK_Misc.m"; path = "Source/NSArray/NSArray+MK_Misc.m"; sourceTree = "<group>"; };
+		FEF54D8581FD69C5E1B17109 /* Pods-LivsmedelStuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivsmedelStuff.release.xcconfig"; sourceTree = "<group>"; };
+		FFE3B1BCCE92E4027CDF0549 /* GraphKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GraphKit.h; path = Source/GraphKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3237563F57F4565CAB36630D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AD0588B807436A210C8408 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768D433A2B22B9642BE52EB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47132C2304FF0429E0A718D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C40C46B58CEBE6501ED4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06FF47152B283BC7E2F0E2A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62CD9BFEFC095D932264061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D9F574A98313992493D5C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10AFA662FEABA02B8EE6B600 /* GraphKit */ = {
+			isa = PBXGroup;
+			children = (
+				2C760EB7B56C1DF20991C5DB /* GKBar.h */,
+				E34286504AA56117F48588CC /* GKBar.m */,
+				C863829A7A0E5A2856BF7345 /* GKBarGraph.h */,
+				66B485B5C361A3DC6C5BE6FA /* GKBarGraph.m */,
+				6C9FC584A8762A7E9B0EF1BC /* GKLineGraph.h */,
+				D241D5D7CD241C6E4C3FB1CD /* GKLineGraph.m */,
+				FFE3B1BCCE92E4027CDF0549 /* GraphKit.h */,
+				29A27D5B8EE75567C2F1E8D1 /* UIColor+GraphKit.h */,
+				DACA0CBA690CEA4FF5ADE8E8 /* UIColor+GraphKit.m */,
+				268BE966670F635BED98FA13 /* Support Files */,
+			);
+			path = GraphKit;
+			sourceTree = "<group>";
+		};
+		18627267F3108B4D734D0602 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB33FD48D4A74F214C3E16E0 /* FrameAccessor */,
+				10AFA662FEABA02B8EE6B600 /* GraphKit */,
+				418D7041787E5B3E33C58E77 /* MKFoundationKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		261B3802971FFCA7A9BD7F46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6711EA158CC32759B2529140 /* libPods-LivsmedelStuff.a */,
+				861C4E949DFCA42F3169C28C /* libPods-LivsmedelStuff-FrameAccessor.a */,
+				620F5A76CF6FCD74A30D4B94 /* libPods-LivsmedelStuff-GraphKit.a */,
+				A0433D76D859D991697F7B89 /* libPods-LivsmedelStuff-MKFoundationKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		268BE966670F635BED98FA13 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A2A81C33E7AB51CB8E0AC86 /* Pods-LivsmedelStuff-GraphKit.xcconfig */,
+				B8DCCFAE8E7DF1831A955C08 /* Pods-LivsmedelStuff-GraphKit-Private.xcconfig */,
+				7AC42F277E9257860252A426 /* Pods-LivsmedelStuff-GraphKit-dummy.m */,
+				7449DA0284E87C69D018EAF6 /* Pods-LivsmedelStuff-GraphKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-LivsmedelStuff-GraphKit";
+			sourceTree = "<group>";
+		};
+		418D7041787E5B3E33C58E77 /* MKFoundationKit */ = {
+			isa = PBXGroup;
+			children = (
+				7ACB307D9372CCB8CEF2E3A7 /* NSArray */,
+				6EF6A484E9F4CE1C3F5ECE7F /* Support Files */,
+			);
+			path = MKFoundationKit;
+			sourceTree = "<group>";
+		};
+		542C8522DE39A4F2B1206B0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8177318014FA94785260A9D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EF6A484E9F4CE1C3F5ECE7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				25E6FE0995974909EC7E5785 /* Pods-LivsmedelStuff-MKFoundationKit.xcconfig */,
+				1C3D47CE1F84721D8878758E /* Pods-LivsmedelStuff-MKFoundationKit-Private.xcconfig */,
+				31E72D31A7FC5D8425F58389 /* Pods-LivsmedelStuff-MKFoundationKit-dummy.m */,
+				51534C4E277939BA2B6AE6FA /* Pods-LivsmedelStuff-MKFoundationKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-LivsmedelStuff-MKFoundationKit";
+			sourceTree = "<group>";
+		};
+		7ACB307D9372CCB8CEF2E3A7 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				A5DD90326F211042347A6776 /* NSArray+MK.h */,
+				66AB15995EB390B8C1D7FC04 /* NSArray+MK_Block.h */,
+				D318748E132F146E49292BA8 /* NSArray+MK_Block.m */,
+				6CFE8A64DEDA8D32724DACA4 /* NSArray+MK_Misc.h */,
+				FCC00798C9174B18A1BF01F4 /* NSArray+MK_Misc.m */,
+				14612E807BBCDE01773F27D0 /* NSMutableArray+MK_Misc.h */,
+				1D7D4C3F506CBFF58CD25A5F /* NSMutableArray+MK_Misc.m */,
+				D6FFC4D41D99A6F15123A4ED /* NSMutableArray+MK_Queue.h */,
+				251D271438B86794807B9D98 /* NSMutableArray+MK_Queue.m */,
+				D96054FCF72F7EE3D84BC1E0 /* NSMutableArray+MK_Stack.h */,
+				562467E8FD856AA7ECCB29CC /* NSMutableArray+MK_Stack.m */,
+			);
+			name = NSArray;
+			sourceTree = "<group>";
+		};
+		7BBC2D95419241ABB1E1C3F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				272F95109115159EE1FD7CD3 /* Pods-LivsmedelStuff-FrameAccessor.xcconfig */,
+				386F55D905F624B5C09351D0 /* Pods-LivsmedelStuff-FrameAccessor-Private.xcconfig */,
+				6EFA7F8871CBB506C2042CAA /* Pods-LivsmedelStuff-FrameAccessor-dummy.m */,
+				7259049C72F8E763A41DC7B4 /* Pods-LivsmedelStuff-FrameAccessor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-LivsmedelStuff-FrameAccessor";
+			sourceTree = "<group>";
+		};
+		95CBEEEA5A312879E7F34B84 /* Pods-LivsmedelStuff */ = {
+			isa = PBXGroup;
+			children = (
+				5FBBFAA22551BE058EFBD9F5 /* Pods-LivsmedelStuff-acknowledgements.markdown */,
+				9F34C243F3071F61726A61C3 /* Pods-LivsmedelStuff-acknowledgements.plist */,
+				D113EE411815B0943CA8A7E7 /* Pods-LivsmedelStuff-dummy.m */,
+				BA51D032B8B37B66494E6252 /* Pods-LivsmedelStuff-environment.h */,
+				B1E2848501057B94BCD7841D /* Pods-LivsmedelStuff-resources.sh */,
+				18C65F681E9998877B156FEC /* Pods-LivsmedelStuff.debug.xcconfig */,
+				FEF54D8581FD69C5E1B17109 /* Pods-LivsmedelStuff.release.xcconfig */,
+			);
+			name = "Pods-LivsmedelStuff";
+			path = "Target Support Files/Pods-LivsmedelStuff";
+			sourceTree = "<group>";
+		};
+		CB33FD48D4A74F214C3E16E0 /* FrameAccessor */ = {
+			isa = PBXGroup;
+			children = (
+				9663F13338437DC2B948E108 /* FrameAccessor.h */,
+				40F77AFC50B941A642B91F62 /* ScrollViewFrameAccessor.h */,
+				B81269BE94F6B123CCFB0F6D /* ScrollViewFrameAccessor.m */,
+				787BE4565490693B0F4B0906 /* ViewFrameAccessor.h */,
+				933073F78D1CC77D3F8869F6 /* ViewFrameAccessor.m */,
+				7BBC2D95419241ABB1E1C3F0 /* Support Files */,
+			);
+			path = FrameAccessor;
+			sourceTree = "<group>";
+		};
+		D0C6B630BBBC8740D2F2C87A = {
+			isa = PBXGroup;
+			children = (
+				15A954120EA9077B3668C572 /* Podfile */,
+				542C8522DE39A4F2B1206B0F /* Frameworks */,
+				18627267F3108B4D734D0602 /* Pods */,
+				261B3802971FFCA7A9BD7F46 /* Products */,
+				DBB5A565A3CFF84E9D357CFE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DBB5A565A3CFF84E9D357CFE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				95CBEEEA5A312879E7F34B84 /* Pods-LivsmedelStuff */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E8177318014FA94785260A9D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E57F11672A3A59AF6F7D8F36 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3FC1E00A329C5E64E9EF3AAB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C06F430725A64676B79209 /* FrameAccessor.h in Headers */,
+				9EA8BF3B6A86D8981C430F99 /* ScrollViewFrameAccessor.h in Headers */,
+				10A983972D72DD91DD700F37 /* ViewFrameAccessor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0B8690886CA0780B5E33DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E8DDB85984D933D63CB123 /* NSArray+MK.h in Headers */,
+				A3FEA4302C479CDA98FB6E7E /* NSArray+MK_Block.h in Headers */,
+				3A2FEC6978682C50C998C2B0 /* NSArray+MK_Misc.h in Headers */,
+				3D319367BD48FB4CDD8C8EE1 /* NSMutableArray+MK_Misc.h in Headers */,
+				099A98C2F9EDA020049CF512 /* NSMutableArray+MK_Queue.h in Headers */,
+				E606CA41E496EE640062CCEB /* NSMutableArray+MK_Stack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB0C4A4FE4D7A0122156FD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656AEB72CC5D4E35EBD1BA8E /* GKBar.h in Headers */,
+				024198212F378347732863D2 /* GKBarGraph.h in Headers */,
+				74117E427119B05C13B53318 /* GKLineGraph.h in Headers */,
+				1822D3DFCF3B2907AAC95EB8 /* GraphKit.h in Headers */,
+				541D11612EBE82F4377B4D74 /* UIColor+GraphKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A45702DBBBAB2ABCABF943E /* Pods-LivsmedelStuff-FrameAccessor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A8F4C11D4FC5350E6364BA0 /* Build configuration list for PBXNativeTarget "Pods-LivsmedelStuff-FrameAccessor" */;
+			buildPhases = (
+				4E02F686BA3A8517A7584BEA /* Sources */,
+				768D433A2B22B9642BE52EB3 /* Frameworks */,
+				3FC1E00A329C5E64E9EF3AAB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LivsmedelStuff-FrameAccessor";
+			productName = "Pods-LivsmedelStuff-FrameAccessor";
+			productReference = 861C4E949DFCA42F3169C28C /* libPods-LivsmedelStuff-FrameAccessor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4718FBBE105D649265141D19 /* Pods-LivsmedelStuff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE699489FCB5C50BAF043BDE /* Build configuration list for PBXNativeTarget "Pods-LivsmedelStuff" */;
+			buildPhases = (
+				B1823334DAAC53195AFD4DA6 /* Sources */,
+				3237563F57F4565CAB36630D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				111337B3BE0BDF2701C6263E /* PBXTargetDependency */,
+				8ACF528779696282F4CD7F7E /* PBXTargetDependency */,
+				34C2DB8BC2ABCD4F1BDBE6F7 /* PBXTargetDependency */,
+			);
+			name = "Pods-LivsmedelStuff";
+			productName = "Pods-LivsmedelStuff";
+			productReference = 6711EA158CC32759B2529140 /* libPods-LivsmedelStuff.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4A08FF4B268A1C803C24FCA9 /* Pods-LivsmedelStuff-GraphKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADCD134E6E82B44D7F4C43F /* Build configuration list for PBXNativeTarget "Pods-LivsmedelStuff-GraphKit" */;
+			buildPhases = (
+				98A06C24E9993BA4F5CC76AB /* Sources */,
+				E62CD9BFEFC095D932264061 /* Frameworks */,
+				8DB0C4A4FE4D7A0122156FD2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				134E07EFFE6C1A5A59028766 /* PBXTargetDependency */,
+				FD21FD96A6C49EB27CEF3F9C /* PBXTargetDependency */,
+			);
+			name = "Pods-LivsmedelStuff-GraphKit";
+			productName = "Pods-LivsmedelStuff-GraphKit";
+			productReference = 620F5A76CF6FCD74A30D4B94 /* libPods-LivsmedelStuff-GraphKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		61A26C9FC6876C8475D75E53 /* Pods-LivsmedelStuff-MKFoundationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8263B8566174560562B8902 /* Build configuration list for PBXNativeTarget "Pods-LivsmedelStuff-MKFoundationKit" */;
+			buildPhases = (
+				ABA12CEA44766553CAB4A488 /* Sources */,
+				E0C40C46B58CEBE6501ED4BF /* Frameworks */,
+				7A0B8690886CA0780B5E33DE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LivsmedelStuff-MKFoundationKit";
+			productName = "Pods-LivsmedelStuff-MKFoundationKit";
+			productReference = A0433D76D859D991697F7B89 /* libPods-LivsmedelStuff-MKFoundationKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E3450D6D26425E1490EC9DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = DF80FF5207595C227E80FF73 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0C6B630BBBC8740D2F2C87A;
+			productRefGroup = 261B3802971FFCA7A9BD7F46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4718FBBE105D649265141D19 /* Pods-LivsmedelStuff */,
+				0A45702DBBBAB2ABCABF943E /* Pods-LivsmedelStuff-FrameAccessor */,
+				4A08FF4B268A1C803C24FCA9 /* Pods-LivsmedelStuff-GraphKit */,
+				61A26C9FC6876C8475D75E53 /* Pods-LivsmedelStuff-MKFoundationKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E02F686BA3A8517A7584BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5FF84D18A087AF5FFB9677 /* Pods-LivsmedelStuff-FrameAccessor-dummy.m in Sources */,
+				D8C9F51C97E69C12CCC6427F /* ScrollViewFrameAccessor.m in Sources */,
+				EDCACEAE31E7325DE19C98DA /* ViewFrameAccessor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A06C24E9993BA4F5CC76AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE4F3C1F35ACE4161AD7408 /* GKBar.m in Sources */,
+				D0017F5EA6FC79CA93990981 /* GKBarGraph.m in Sources */,
+				5F2376A2BD345A74E2B541B3 /* GKLineGraph.m in Sources */,
+				EA35E342DC4B1B5DB87D733F /* Pods-LivsmedelStuff-GraphKit-dummy.m in Sources */,
+				0E95D850432FA99D5916C987 /* UIColor+GraphKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA12CEA44766553CAB4A488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB5C1F8AA4A6DD1E820B678 /* NSArray+MK_Block.m in Sources */,
+				537C9D2B9C99AD498C1081FE /* NSArray+MK_Misc.m in Sources */,
+				88A29624342BD67AB0B12145 /* NSMutableArray+MK_Misc.m in Sources */,
+				F82C4BCC04BB0E1F078BB9F6 /* NSMutableArray+MK_Queue.m in Sources */,
+				82E18244D18D191CADFD5951 /* NSMutableArray+MK_Stack.m in Sources */,
+				E3B3D9B8C5DE477079717F22 /* Pods-LivsmedelStuff-MKFoundationKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1823334DAAC53195AFD4DA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677C4137412DE9E882F29C96 /* Pods-LivsmedelStuff-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		111337B3BE0BDF2701C6263E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LivsmedelStuff-FrameAccessor";
+			target = 0A45702DBBBAB2ABCABF943E /* Pods-LivsmedelStuff-FrameAccessor */;
+			targetProxy = 6AC52863717EAA519F0B7C8B /* PBXContainerItemProxy */;
+		};
+		134E07EFFE6C1A5A59028766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LivsmedelStuff-FrameAccessor";
+			target = 0A45702DBBBAB2ABCABF943E /* Pods-LivsmedelStuff-FrameAccessor */;
+			targetProxy = 0FA45AA311A6B8EB925BF166 /* PBXContainerItemProxy */;
+		};
+		34C2DB8BC2ABCD4F1BDBE6F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LivsmedelStuff-MKFoundationKit";
+			target = 61A26C9FC6876C8475D75E53 /* Pods-LivsmedelStuff-MKFoundationKit */;
+			targetProxy = 77292E33EDDCE80B0EE65DF8 /* PBXContainerItemProxy */;
+		};
+		8ACF528779696282F4CD7F7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LivsmedelStuff-GraphKit";
+			target = 4A08FF4B268A1C803C24FCA9 /* Pods-LivsmedelStuff-GraphKit */;
+			targetProxy = 0F0DE09B3076BAEFE2D2ACF0 /* PBXContainerItemProxy */;
+		};
+		FD21FD96A6C49EB27CEF3F9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LivsmedelStuff-MKFoundationKit";
+			target = 61A26C9FC6876C8475D75E53 /* Pods-LivsmedelStuff-MKFoundationKit */;
+			targetProxy = 86A5D766EEE1741E44C539EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19EDA45D50BE5F36347DE498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF54D8581FD69C5E1B17109 /* Pods-LivsmedelStuff.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		27227F7B2102F0A2D2E0D3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386F55D905F624B5C09351D0 /* Pods-LivsmedelStuff-FrameAccessor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LivsmedelStuff-FrameAccessor/Pods-LivsmedelStuff-FrameAccessor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2C9BEA9A9F55DCB1EB39F65A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4FA1B3C8AF907535EF1D373C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3D47CE1F84721D8878758E /* Pods-LivsmedelStuff-MKFoundationKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LivsmedelStuff-MKFoundationKit/Pods-LivsmedelStuff-MKFoundationKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		55CC50A657C58EB8C52D6F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DCCFAE8E7DF1831A955C08 /* Pods-LivsmedelStuff-GraphKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LivsmedelStuff-GraphKit/Pods-LivsmedelStuff-GraphKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		589E7E5A2EAB4422C925DF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79F1E593FC591131F241D5B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3D47CE1F84721D8878758E /* Pods-LivsmedelStuff-MKFoundationKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LivsmedelStuff-MKFoundationKit/Pods-LivsmedelStuff-MKFoundationKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		965FC27B5D1915AEEFB0ED6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C65F681E9998877B156FEC /* Pods-LivsmedelStuff.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA6900C215A828A907EF4DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DCCFAE8E7DF1831A955C08 /* Pods-LivsmedelStuff-GraphKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LivsmedelStuff-GraphKit/Pods-LivsmedelStuff-GraphKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BF9A7750AF98DE6600E41794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386F55D905F624B5C09351D0 /* Pods-LivsmedelStuff-FrameAccessor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LivsmedelStuff-FrameAccessor/Pods-LivsmedelStuff-FrameAccessor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A8F4C11D4FC5350E6364BA0 /* Build configuration list for PBXNativeTarget "Pods-LivsmedelStuff-FrameAccessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9A7750AF98DE6600E41794 /* Debug */,
+				27227F7B2102F0A2D2E0D3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADCD134E6E82B44D7F4C43F /* Build configuration list for PBXNativeTarget "Pods-LivsmedelStuff-GraphKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55CC50A657C58EB8C52D6F58 /* Debug */,
+				AA6900C215A828A907EF4DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE699489FCB5C50BAF043BDE /* Build configuration list for PBXNativeTarget "Pods-LivsmedelStuff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965FC27B5D1915AEEFB0ED6F /* Debug */,
+				19EDA45D50BE5F36347DE498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF80FF5207595C227E80FF73 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9BEA9A9F55DCB1EB39F65A /* Debug */,
+				589E7E5A2EAB4422C925DF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8263B8566174560562B8902 /* Build configuration list for PBXNativeTarget "Pods-LivsmedelStuff-MKFoundationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F1E593FC591131F241D5B6 /* Debug */,
+				4FA1B3C8AF907535EF1D373C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E3450D6D26425E1490EC9DB /* Project object */;
+}

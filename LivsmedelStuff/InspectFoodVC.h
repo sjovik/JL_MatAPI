@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBProtocol.h"
 
-@interface InspectFoodVC : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface InspectFoodVC : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, DBDelegate>
 
 @property (nonatomic) NSNumber* foodNumber;
 @end

@@ -16,6 +16,7 @@
 @property (nonatomic) NSArray *filteredResults;
 @property (nonatomic) BOOL isScrolling;
 @property (nonatomic) BOOL shouldReload;
+@property (nonatomic) BOOL shouldFetchNutrients;
 
 @end
 
@@ -41,13 +42,17 @@
 -(void)searchNutrientsCompleted:(NSArray *)result {
     [self.nutrientValues addObjectsFromArray:result];
     
-     if(!self.isScrolling ) {
-        NSLog(@"%@", @"db comp reloading...");
-         [self reloadVisibleCellData];
-     } else {
-         self.shouldReload = YES;
-     }
-    [self fetchNutrients];
+    if(!self.isScrolling ) {
+       NSLog(@"%@", @"db comp reloading...");
+        [self reloadVisibleCellData];
+    } else {
+        self.shouldReload = YES;
+    }
+    
+    if (self.shouldFetchNutrients) {
+        [self fetchNutrients];
+    }
+    
 }
 
 // Scroll event - holds cell update until scroll is over.
@@ -71,39 +76,23 @@
     [self stoppedScrolling];
 }
 
-/*
--(void)fetchNutrientCompleted:(NSString *)result forIndexPath:(NSInteger)ndx {
-   
-    NSLog(@"nutrientValues: %@", result);
-    
-    NSBlockOperation *finished = [NSBlockOperation blockOperationWithBlock:^{
-        
-        NSLog(@"finished: %@", @"alla");
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.tableView reloadData];
-        });
-    }];
-
-    
-    NSString *hej = [NSString stringWithFormat:@"%ld", (long)ndx];
-    [self.nutrientValues setObject:result forKey:hej];
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.tableView reloadData];
-    });
-    
-    
-     NSLog(@"nutrientValues: %ld", (long)ndx);
+-(void)viewWillDisappear:(BOOL)animated {
+    self.shouldFetchNutrients = NO;
 }
-*/
 
+-(void)viewDidAppear:(BOOL)animated {
+    if (self.nutrientValues.count < self.results.count) {
+        self.shouldFetchNutrients = YES;
+        [self fetchNutrients];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dbProtocol = [[DBProtocol alloc] init];
     self.dbProtocol.delegate = self;
     self.nutrientValues = [[NSMutableArray alloc] initWithCapacity:self.results.count];
+    self.shouldFetchNutrients = YES;
     [self fetchNutrients];
 }
 
@@ -113,7 +102,6 @@
         NSArray *fetchTen = @[];
         
         if (self.nutrientValues.count + 10 < self.results.count) {
-            // NSLog(@"%@", );
             fetchTen = [self.results subarrayWithRange:NSMakeRange(self.nutrientValues.count, 10)];
         } else {
             fetchTen = [self.results subarrayWithRange:NSMakeRange(self.nutrientValues.count, self.results.count - self.nutrientValues.count)];
