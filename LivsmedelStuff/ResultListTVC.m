@@ -30,7 +30,6 @@
     for (ResultTVCell *cell in visibleCells) {
         NSIndexPath *path = [self.tableView indexPathForCell:cell];
         if ([cell.descriptionLabel.text isEqualToString:@"Energi: Laddar..."] && self.nutrientValues.count > path.row) {
-            NSLog(@"reloading row");
             rowVisible = YES;
         }
     }
@@ -43,7 +42,6 @@
     [self.nutrientValues addObjectsFromArray:result];
     
     if(!self.isScrolling ) {
-       NSLog(@"%@", @"db comp reloading...");
         [self reloadVisibleCellData];
     } else {
         self.shouldReload = YES;
@@ -57,13 +55,11 @@
 
 // Scroll event - holds cell update until scroll is over.
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    NSLog(@"scrolling...");
     self.isScrolling = YES;
 }
 - (void)stoppedScrolling {
     self.isScrolling = NO;
     if (self.shouldReload) {
-        NSLog(@"stopped scr reloading...");
         [self reloadVisibleCellData];
     }
 }
@@ -111,12 +107,6 @@
     }
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -157,41 +147,6 @@
     
     return cell;
 }
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 
 #pragma mark - Navigation

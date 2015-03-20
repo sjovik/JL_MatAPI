@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GKBarGraph.h"
+#import "DBProtocol.h"
 
-@interface FavouritesVC : UIViewController
+@interface FavouritesVC : UIViewController<GKBarGraphDataSource, DBDelegate>
 
 @end

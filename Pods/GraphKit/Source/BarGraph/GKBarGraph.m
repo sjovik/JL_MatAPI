@@ -30,10 +30,10 @@
 
 #import "GKBar.h"
 
-static CGFloat kDefaultBarHeight = 140;
-static CGFloat kDefaultBarWidth = 22;
-static CGFloat kDefaultBarMargin = 20;
-static CGFloat kDefaultLabelWidth = 40;
+static CGFloat kDefaultBarHeight = 120;
+static CGFloat kDefaultBarWidth = 25;
+static CGFloat kDefaultBarMargin = 15;
+static CGFloat kDefaultLabelWidth = 50;
 static CGFloat kDefaultLabelHeight = 15;
 
 static CGFloat kDefaultAnimationDuration = 2.0;

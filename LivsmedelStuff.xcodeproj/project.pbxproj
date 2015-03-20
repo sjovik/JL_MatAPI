@@ -10,7 +10,6 @@
 		52128CE00E3AA5F6FA54EF58 /* libPods-LivsmedelStuff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44068A95FAFC3AF1DBBB8369 /* libPods-LivsmedelStuff.a */; };
 		8F3466FE1A92398B003E102C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3466FD1A92398B003E102C /* main.m */; };
 		8F3467011A92398B003E102C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3467001A92398B003E102C /* AppDelegate.m */; };
-		8F3467071A92398B003E102C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3467051A92398B003E102C /* Main.storyboard */; };
 		8F3467091A92398B003E102C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3467081A92398B003E102C /* Images.xcassets */; };
 		8F34670C1A92398B003E102C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F34670A1A92398B003E102C /* LaunchScreen.xib */; };
 		8F3467181A92398B003E102C /* LivsmedelStuffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3467171A92398B003E102C /* LivsmedelStuffTests.m */; };
@@ -20,6 +19,9 @@
 		8FB08BFD1A9B678E00C469E5 /* ResultListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB08BFC1A9B678E00C469E5 /* ResultListTVC.m */; };
 		8FB08C001A9DAB3800C469E5 /* ResultTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB08BFF1A9DAB3800C469E5 /* ResultTVCell.m */; };
 		8FB08C391A9DFE9600C469E5 /* DBProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB08C381A9DFE9600C469E5 /* DBProtocol.m */; };
+		8FEFFF9C1AB837770081AB25 /* FavouriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEFFF9B1AB837770081AB25 /* FavouriteButton.m */; };
+		8FEFFF9F1AB9B8220081AB25 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEFFF9E1AB9B8220081AB25 /* Utilities.m */; };
+		8FEFFFA11AB9CEC40081AB25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEFFFA01AB9CEC40081AB25 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		8F3466FD1A92398B003E102C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F3466FF1A92398B003E102C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F3467001A92398B003E102C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8F3467061A92398B003E102C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F3467081A92398B003E102C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8F34670B1A92398B003E102C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8F3467111A92398B003E102C /* LivsmedelStuffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivsmedelStuffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +59,11 @@
 		8FB08BFF1A9DAB3800C469E5 /* ResultTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultTVCell.m; sourceTree = "<group>"; };
 		8FB08C371A9DFE9600C469E5 /* DBProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBProtocol.h; sourceTree = "<group>"; };
 		8FB08C381A9DFE9600C469E5 /* DBProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBProtocol.m; sourceTree = "<group>"; };
+		8FEFFF9A1AB837770081AB25 /* FavouriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteButton.h; sourceTree = "<group>"; };
+		8FEFFF9B1AB837770081AB25 /* FavouriteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteButton.m; sourceTree = "<group>"; };
+		8FEFFF9D1AB9B8220081AB25 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		8FEFFF9E1AB9B8220081AB25 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		8FEFFFA01AB9CEC40081AB25 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DA8CE20DAA7E949E3009B0B3 /* Pods-LivsmedelStuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivsmedelStuff.release.xcconfig"; path = "Pods/Target Support Files/Pods-LivsmedelStuff/Pods-LivsmedelStuff.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,8 +120,8 @@
 			children = (
 				8FB08C361A9DFE5B00C469E5 /* Model */,
 				8FB08BFA1A9B66C400C469E5 /* ViewControllers */,
-				8F3467051A92398B003E102C /* Main.storyboard */,
 				8F3467081A92398B003E102C /* Images.xcassets */,
+				8FEFFFA01AB9CEC40081AB25 /* Main.storyboard */,
 				8F34670A1A92398B003E102C /* LaunchScreen.xib */,
 				8F3466FB1A92398B003E102C /* Supporting Files */,
 			);
@@ -129,6 +135,8 @@
 				8F3467001A92398B003E102C /* AppDelegate.m */,
 				8F3466FC1A92398B003E102C /* Info.plist */,
 				8F3466FD1A92398B003E102C /* main.m */,
+				8FEFFF9D1AB9B8220081AB25 /* Utilities.h */,
+				8FEFFF9E1AB9B8220081AB25 /* Utilities.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -178,6 +186,8 @@
 		8FE9E8071AA07E280005F4C8 /* subviews */ = {
 			isa = PBXGroup;
 			children = (
+				8FEFFF9A1AB837770081AB25 /* FavouriteButton.h */,
+				8FEFFF9B1AB837770081AB25 /* FavouriteButton.m */,
 				8FB08BFF1A9DAB3800C469E5 /* ResultTVCell.m */,
 				8FB08BFE1A9DAB3800C469E5 /* ResultTVCell.h */,
 			);
@@ -274,7 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F3467071A92398B003E102C /* Main.storyboard in Resources */,
+				8FEFFFA11AB9CEC40081AB25 /* Main.storyboard in Resources */,
 				8F34670C1A92398B003E102C /* LaunchScreen.xib in Resources */,
 				8F3467091A92398B003E102C /* Images.xcassets in Resources */,
 			);
@@ -328,8 +338,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB08BFD1A9B678E00C469E5 /* ResultListTVC.m in Sources */,
+				8FEFFF9C1AB837770081AB25 /* FavouriteButton.m in Sources */,
 				8F7859111AB19A9A00DF5FA7 /* InspectFoodVC.m in Sources */,
 				8F7859141AB2EAA800DF5FA7 /* FavouritesVC.m in Sources */,
+				8FEFFF9F1AB9B8220081AB25 /* Utilities.m in Sources */,
 				8FB08BF91A9B66B900C469E5 /* SearchVC.m in Sources */,
 				8FB08C001A9DAB3800C469E5 /* ResultTVCell.m in Sources */,
 				8F3467011A92398B003E102C /* AppDelegate.m in Sources */,
@@ -357,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8F3467051A92398B003E102C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F3467061A92398B003E102C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8F34670A1A92398B003E102C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
